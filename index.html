@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        background: #e7ebed;
+      }
+      .slanted-bg {
+        background-color: #4a1c81;
+        clip-path: polygon(0 0, 100% 0, 100% -10%, 0% 110%);
+        height: 100vh;
+        position: fixed;
+        width: 100vw;
+        z-index: -1;
+      }
+      .card-container {
+        perspective: 1000px;
+      }
+      .rotate-box {
+        transition: transform 0.6s ease-in-out, box-shadow 0.3s ease;
+        transform-origin: center;
+        height: 350px;
+        width: 100%;
+        z-index: 1;
+        background-color: white;
+      }
+
+      .rotate-box:hover {
+        transform: rotateZ(360deg);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .circular-img {
+        width: 75px;
+        height: 75px;
+        object-fit: cover;
+        position: absolute;
+        top: -50px;
+        left: 50%;
+        background-color: #ffffff;
+        transform: translateX(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="assignment">
+      <div class="slanted-bg"></div>
+      <div class="container mx-auto mt-8 absolute px-16 py-8">
+        <h1 class="text-5xl font-bold text-white mb-28 uppercase">
+          OUR SERVICES
+        </h1>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 text-center"
+        >
+          <div class="card-container">
+            <div class="shadow-lg rounded-lg p-8 rotate-box relative">
+              <img
+                src="https://img.icons8.com/color/96/plumbing.png"
+                alt="Emergency Plumbing Icon"
+                class="mx-auto mb-4 rounded-full border-4 border-black w-32 h-32 object-cover circular-img"
+              />
+              <h3
+                class="text-2xl font-semibold text-gray-800 mb-2 mt-20 uppercase"
+              >
+                Emergency Plumbing Services
+              </h3>
+              <p class="text-gray-600 mb-4 text-base">
+                Available 24/7 for emergencies – including nights, weekends, and
+                holidays.
+              </p>
+              <a href="#" class="text-purple-700 font-bold hover:underline"
+                >EXPLORE THIS SERVICE ></a
+              >
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="shadow-lg rounded-lg p-8 rotate-box relative">
+              <img
+                src="https://img.icons8.com/?size=1200&id=EiS6GFBCqtYK&format=png&color=000000"
+                alt="Plumbing and Drains Icon"
+                class="mx-auto mb-4 rounded-full border-4 border-black w-32 h-32 object-cover circular-img"
+              />
+              <h3
+                class="text-2xl font-semibold text-gray-800 mb-2 mt-20 uppercase"
+              >
+                Plumbing and Drains
+              </h3>
+              <p class="text-gray-600 mb-4 text-base">
+                We handle thousands of repairs daily, ensuring efficiency and
+                quality.
+              </p>
+              <a href="#" class="text-purple-700 font-bold hover:underline"
+                >EXPLORE THIS SERVICE ></a
+              >
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="shadow-lg rounded-lg p-8 rotate-box relative">
+              <img
+                src="https://img.icons8.com/?size=100&id=13101&format=png&color=000000"
+                alt="Water Damage Icon"
+                class="mx-auto mb-4 rounded-full border-4 border-black w-32 h-32 object-cover circular-img"
+              />
+              <h3
+                class="text-2xl font-semibold text-gray-800 mb-2 mt-20 uppercase"
+              >
+                Water Damage
+              </h3>
+              <p class="text-gray-600 mb-4 text-base">
+                State-of-the-art extraction and cleanup services for water
+                damage control.
+              </p>
+              <a href="#" class="text-purple-700 font-bold hover:underline"
+                >EXPLORE THIS SERVICE ></a
+              >
+            </div>
+          </div>
+          <div class="card-container">
+            <div class="shadow-lg rounded-lg p-8 rotate-box relative">
+              <img
+                src="https://img.icons8.com/color/96/water-heater.png"
+                alt="Water Heaters Icon"
+                class="mx-auto mb-4 rounded-full border-4 border-black w-32 h-32 object-cover circular-img"
+              />
+              <h3
+                class="text-2xl font-semibold text-gray-800 mb-2 mt-20 uppercase"
+              >
+                Water Heaters
+              </h3>
+              <p class="text-gray-600 mb-4 text-base">
+                Repair and replacement of gas, electric, and tankless water
+                heaters.
+              </p>
+              <a href="#" class="text-purple-700 font-bold hover:underline"
+                >EXPLORE THIS SERVICE ></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
